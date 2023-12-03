@@ -1,0 +1,56 @@
+import React from 'react';
+import {View, StyleSheet, TouchableHightlight, Text} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
+const DetailListItem = ({ icon, title, subtitle, onPress}) => {
+    return (
+        <TouchableHightlight underlayColor="grey"
+            styles={styles.container}
+            onPress={onPress}
+        >
+        <View style={styles.detailInfo}>
+            <Icon name={icon}/>
+            <View style={styles.details}>
+                <Text style={styles.title}>
+                    {title}
+                </Text>
+                <Text style={styles.subtitle}>
+                    {subtitle}
+                </Text>
+            </View>
+        </View>
+        </TouchableHightlight>
+    );
+}
+const styles = StyleSheet.create({
+    container: {
+        paddingLeft: 50,
+        marginTop: 0,
+    },
+    detailInfo: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingTop: 24,
+        paddingBottom: 24,
+        borderBottomColor: 'grey',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    
+    details: {
+        justifyContent: 'center',
+        flex: 1,
+        marginLeft: 25,
+    },
+    title: {
+        color: 'black',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    subtitle: {
+        color: 'blue',
+        fontSize: 14,
+        marginTop: 4
+    }
+})
+export default DetailListItem;

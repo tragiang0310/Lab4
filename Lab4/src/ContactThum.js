@@ -19,7 +19,7 @@ const ContactThum = ({ name, phone, avatar, textColor, onPress}) => {
             {name !== '' && <Text style={[styles.name, colorStyle]}>{name}</Text>}
             {phone !== '' && (
                 <View style={styles.phoneSection}>
-                    <Icon name='phone' size={16} style={{color: textColor}}/>
+                    <Icon name="phone" size={16} style={{color: textColor}}/>
                     <Text style={[styles.phone, colorStyle]}>{phone}</Text>
                 </View>
             )}

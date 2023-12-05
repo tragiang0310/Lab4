@@ -18,35 +18,4 @@ const DetailListItem = ({icon, title, description}) => {
         </View>
     );
 };
-const styles = StyleSheet.create({
-    container: {
-        paddingLeft: 50,
-        marginTop: 0,
-    },
-    detailInfo: {
-        flex: 1,
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingTop: 24,
-        paddingBottom: 24,
-        borderBottomColor: 'grey',
-        borderBottomWidth: StyleSheet.hairlineWidth,
-    },
-    
-    details: {
-        justifyContent: 'center',
-        flex: 1,
-        marginLeft: 25,
-    },
-    title: {
-        color: 'black',
-        fontWeight: 'bold',
-        fontSize: 16,
-    },
-    subtitle: {
-        color: 'blue',
-        fontSize: 14,
-        marginTop: 4
-    }
-})
 export default DetailListItem;

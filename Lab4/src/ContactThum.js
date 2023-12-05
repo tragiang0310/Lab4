@@ -12,9 +12,9 @@ const ContactThum = ({ name, phone, avatar, textColor, onPress}) => {
     const ImageContact = onPress ? TouchableOpacity : View;
 
     return (
-        <View style={StyleSheet.container}>
+        <View style={styles.container}>
             <ImageContact onPress={onPress}>
-                <Image source={{uri: avatar}} style={StyleSheet.avatar} />
+                <Image source={{uri: avatar}} style={styles.avatar} />
             </ImageContact>
             {name !== '' && <Text style={[styles.name, colorStyle]}>{name}</Text>}
             {phone !== '' && (

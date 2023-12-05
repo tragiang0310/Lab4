@@ -13,9 +13,9 @@ const ProfileContact = ({ route }) => {
                 <ContactThum avatar={avatar} name={name} phone={phone} />
             </View>
             <View style={styles.detailsSection}>
-                <DetailListIt icon="mail" title="Email" subtitle={email}/>
-                <DetailListIt icon="phone" title="Phone" subtitle={phone}/>
-                <DetailListIt icon="smartphone" title="Personal" subtitle={cell}/>
+                <DetailListIt icon="mail" title="Email" description={email}/>
+                <DetailListIt icon="phone" title="Phone" description={phone}/>
+                <DetailListIt icon="smartphone" title="Personal" description={cell}/>
                 <View style={{alignItems: 'center'}}>
                     <IconButton 
                         icon={favorite==true?"star-check":"star-check-outline"}
